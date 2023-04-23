@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  bbb-backend:
+    build: ./bbb_api
+    ports: 
+      - "8000:8000"
+
+  bbb-frontend:
+    build: ./bbb_frontend
+    ports: 
+      - "8080:8080"
